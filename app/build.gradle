@@ -1,13 +1,12 @@
 plugins {
     id 'org.jetbrains.kotlin.multiplatform'
 }
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId 'org.jetbrains.kotlin.mpp_app_android'
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
