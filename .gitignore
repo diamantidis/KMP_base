@@ -9,3 +9,10 @@ local.properties
 *.moved-aside
 *.xcuserstate
 *.xcscmblueprint
+
+## Various settings
+xcuserdata
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
