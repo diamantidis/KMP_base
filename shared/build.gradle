@@ -73,8 +73,8 @@ task copyFramework {
         copy {
             from srcFile.parent
             into targetDir
-            include 'app.framework/**'
-            include 'app.framework.dSYM'
+            include 'shared.framework/**'
+            include 'shared.framework.dSYM'
         }
     }
 }

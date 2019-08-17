@@ -4,15 +4,3 @@ build/
 .idea/
 .DS_STORE
 local.properties
-
-*.xccheckout
-*.moved-aside
-*.xcuserstate
-*.xcscmblueprint
-
-## Various settings
-xcuserdata
-
-## Obj-C/Swift specific
-*.hmap
-*.ipa
