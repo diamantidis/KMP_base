@@ -1,0 +1,12 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Run iOS unit tests"
+  lane :tests do
+    run_tests(
+        project: "iosApp.xcodeproj",
+        devices: ["iPhone 7"],
+        derived_data_path: "../build"
+    )
+  end
+end
