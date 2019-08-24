@@ -9,3 +9,6 @@
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
+
+**/fastlane/report.xml
+**/fastlane/test_output
