@@ -26,6 +26,11 @@ Run iOS unit tests
 fastlane ios lint
 ```
 Run linting
+### ios lint_autocorrect
+```
+fastlane ios lint_autocorrect
+```
+Run lint autocorrect
 
 ----
 

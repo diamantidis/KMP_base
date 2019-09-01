@@ -17,4 +17,13 @@ platform :ios do
     config_file: '.swiftlint.yml',
   )
   end
+
+  desc "Run lint autocorrect"
+  lane :lint_autocorrect do
+    swiftlint(
+      mode: :autocorrect,
+      executable: './Pods/SwiftLint/swiftlint',
+      config_file: '.swiftlint.yml',
+    )
+  end
 end
