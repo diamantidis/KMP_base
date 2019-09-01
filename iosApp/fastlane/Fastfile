@@ -9,4 +9,12 @@ platform :ios do
         derived_data_path: "../build"
     )
   end
+  desc "Run linting"
+  lane :lint do
+  swiftlint(
+    executable: './Pods/SwiftLint/swiftlint', 
+    mode: :lint,
+    config_file: '.swiftlint.yml',
+  )
+  end
 end
