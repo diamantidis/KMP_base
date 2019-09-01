@@ -3,6 +3,7 @@ plugins {
 }
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android-extensions'
+apply from: '../tools/detekt.gradle'
 
 android {
     compileSdkVersion 28
@@ -94,3 +95,4 @@ task iosTest {
 }
 
 tasks.check.dependsOn iosTest
+check.dependsOn 'detekt'
