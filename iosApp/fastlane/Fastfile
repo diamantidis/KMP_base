@@ -4,7 +4,7 @@ platform :ios do
   desc "Run iOS unit tests"
   lane :tests do
     run_tests(
-        project: "iosApp.xcodeproj",
+        workspace: "iosApp.xcworkspace",
         devices: ["iPhone 7"],
         derived_data_path: "../build"
     )
