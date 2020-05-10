@@ -80,19 +80,4 @@ task copyFramework {
     }
 }
 
-task iosTest {
-    def device = project.findProperty("iosDevice")?.toString() ?: "iPhone X"
-    dependsOn kotlin.targets.ios.binaries.getTest('DEBUG').linkTaskName
-    group = JavaBasePlugin.VERIFICATION_GROUP
-    description = "Runs iOS tests on a simulator"
-
-    doLast {
-        def binary = kotlin.targets.ios.binaries.getTest('DEBUG').outputFile
-        exec {
-            commandLine 'xcrun', 'simctl', 'spawn', device, binary.absolutePath
-        }
-    }
-}
-
-tasks.check.dependsOn iosTest
 check.dependsOn 'detekt'

@@ -20,7 +20,7 @@ or alternatively using `brew cask install fastlane`
 ```
 fastlane android tests
 ```
-Runs Android unit tests
+Run Android unit tests
 
 ----
 

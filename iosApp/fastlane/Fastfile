@@ -5,7 +5,7 @@ platform :ios do
   lane :tests do
     run_tests(
         workspace: "iosApp.xcworkspace",
-        devices: ["iPhone 7"],
+        devices: ["iPhone 8"],
         derived_data_path: "../build"
     )
   end
